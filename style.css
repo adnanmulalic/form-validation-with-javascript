@@ -1,0 +1,44 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form {
+    display: grid;
+    font-size: 1.2rem;
+}
+
+input {
+    font-size: 1.2rem;
+}
+
+input:valid {
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+
+input:focus:invalid, input:focus:valid {
+    outline: none;
+}
+
+input:invalid {
+    background-color: lightcoral;
+    border: 1px solid red;
+}
+
+.error {
+    background-color: rgb(248, 48, 48);
+    color: white;
+}
+
+
+/* #user_name:valid {
+    border: 2px solid green;
+}
+
+#user_name:invalid {
+    border: 2px solid red;
+} */
+
+/* form > input {
+    border: 2px solid black;
+} */
