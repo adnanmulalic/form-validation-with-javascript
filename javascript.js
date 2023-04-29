@@ -96,6 +96,9 @@ confirmPassword.addEventListener("input", ()=> {
 
 submitButton.addEventListener("click", ()=> {
     if(document.querySelector("form").checkValidity()){
-        console.log("something")
+        let message = document.createElement("p");
+        message.textContent = "All fields are valid";
+        message.style.color = "white"; message.style.backgroundColor = "green"
+        document.body.appendChild(message);
     };
 })
